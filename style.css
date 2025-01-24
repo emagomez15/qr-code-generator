@@ -1,0 +1,19 @@
+
+:root {
+    --base-color: #ffffff;
+    --primary-text: #000000;
+    --secondary-text:#646464;
+    --tertiary-text:#a3a3a3;
+}
+
+body {
+    background-color: var(--base-color);
+    color: var(--primary-text);
+    font-family: 'Inter';
+}
+
+h1{
+    color: var(--primary-text);
+    font-family: 'MyCustomFont', sans-serif;
+    text-align: center;
+}

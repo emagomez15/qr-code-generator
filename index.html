@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QR Code Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sofia Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/amstelvar" type="text/css"/>
+    <link href="https://blogfonts.com/css/aWQ9MTIxMTc0JnN1Yj0xNzQmYz1hJnR0Zj1BbWVyaWdvK0JvbGQrQlQudHRmJm49YW1lcmlnby1idC00/Amerigo BT.ttf" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <h1> CUSTOM QR CODE GENERATOR </h1>
+    <div class="container">
+    <div class="left">
+        <br>
+        <form action="/" method="POST">
+        <label for="link" class="labels"> SUBMIT URL </label>
+        <br>
+        <input type="text" name="link" placeholder="https://" id="url">
+        <br><br><br>
+        
+        <label for="bcolor" class="labels"> BACKGROUND COLOR </label>
+        <br>
+        <input type="color" name="bcolor" id="back">
+        <br><br><br>
+
+        <label for="fcolor" class="labels"> FILL COLOR </label>
+        <br>
+        <input type="color" name="fcolor" id="fill">
+        <br><br><br>
+
+        <button type="submit" id="submit">GENERATE QR CODE</button>
+
+    </form>
+    </div>
+    <div class="rights">
+    <img src="{{link}}" alt="" />
+    </div>
+</div>
+</body>
+</html>
+
+<style>
+    :root {
+    --base-color: #ffffff;
+    --primary-text: #000000;
+    --secondary-text:#a0a0a0;
+    --tertiary-text:#E8E8E8;
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--base-color);
+    color: var(--primary-text);
+    font-family: 'Alata';
+}
+
+h1{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: var(--primary-text);
+    font-family: 'Alata';
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+label{
+    color: var(--primary-text);
+    font-size: 24px;
+    font-family: 'Alata';
+
+
+}
+
+.container{
+    text-align:;
+    width: 900px;
+    height: 450px;
+    padding: 50px;
+    margin-left: 9%;
+    background-color: var(--tertiary-text);
+    border-radius: 10px;
+
+}
+
+#url{
+    width: 500px;
+    height: 40px;
+    font-size: 22px;
+    font-family: 'Alata';
+
+}
+
+#back{
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    font-family: 'Alata';
+    border: none;
+}
+
+#fill{
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    font-family: 'Alata';
+    border: none;
+}
+
+#submit{
+    width: 400px;
+    height: 50px;
+    font-size: 22px;
+    font-family: 'Alata';
+
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+    margin-right: 5%;
+}
+
+</style>
